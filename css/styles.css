@@ -1,0 +1,45 @@
+#main {
+  width: auto;
+  height: 90vh;
+  position: relative;
+}
+
+#ball {
+  background-color: dodgerblue;
+  position: absolute;
+  margin-top: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset -10px -10px 70px black, 10px 10px 15px,
+    inset 0px 0px 50px black;
+  cursor: pointer;
+}
+
+.letMoove {
+  animation-name: mooving;
+  animation-duration: 3s;
+  animation-iteration-count: 6;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes mooving {
+  from {
+    margin-left: 0%;
+    background-color: dodgerblue;
+    width: 170px;
+  }
+  5% {
+    background-color: lawngreen;
+    width: 200px;
+  }
+  95% {
+    background-color: lawngreen;
+    width: 200px;
+  }
+  to {
+    margin-left: 85%;
+    background-color: dodgerblue;
+    width: 170px;
+  }
+}

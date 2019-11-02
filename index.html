@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework-4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="methods.js"></script>
+    <script src="closure.js"></script>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="ball"></div>
+    </div>
+    <script type="text/javascript">
+      let moove = document.getElementById("ball");
+      moove.addEventListener("click", function() {
+        moove.classList.toggle("letMoove");
+      });
+    </script>
+  </body>
+</html>
