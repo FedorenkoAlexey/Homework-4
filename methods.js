@@ -24,3 +24,18 @@ let arrMap = myMap(arrow, function(el) {
 });
 
 console.log(arrMap);
+
+let mySort = function(arrow) {
+  for (let i = 0; i < arrow.length - 1; i++) {
+    for (let j = 0; j < arrow.length - 1; j++) {
+      if (arrow[j] > arrow[j + 1]) {
+        let elem = arrow[j];
+        arrow[j] = arrow[j + 1];
+        arrow[j + 1] = elem;
+      }
+    }
+  }
+  return arrow;
+};
+let sortArr = mySort(arrow);
+console.log(sortArr);

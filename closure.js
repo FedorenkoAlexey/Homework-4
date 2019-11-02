@@ -1,13 +1,19 @@
 function DriveCar() {
   let _petrol = 0;
   let _distance = 0;
+
   function calculate(gas) {
     _petrol += gas;
     _distance += gas * 10;
   }
+
   function driveWay(km) {
-    _petrol -= km / 10;
-    _distance -= km;
+    if (_distance <= 0) {
+      console.log("First add petrole");
+    } else {
+      _petrol -= km / 10;
+      _distance -= km;
+    }
   }
   return {
     addGas: function() {
@@ -24,14 +30,16 @@ function DriveCar() {
     }
   };
 }
-let car = new DriveCar(20);
+let car = new DriveCar();
 
-car.addGas();
-car.addGas();
-car.addGas();
-car.addGas();
-car.addGas();
-car.addGas();
-car.drive();
-console.log(car.petrol());
-console.log(car.distanse());
+// car.addGas();
+// car.addGas();
+// car.addGas();
+// car.addGas();
+// car.addGas();
+// car.addGas();
+
+// car.drive();
+// car.drive();
+console.log("Have gas: " + car.petrol() + " liters");
+console.log("You can drive: " + car.distanse() + " km");
