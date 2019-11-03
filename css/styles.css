@@ -14,48 +14,119 @@
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  box-shadow: inset -10px -10px 70px black, 0px 280px 100px,
+  box-shadow: inset -10px -10px 70px black, -130px 160px 100px,
     inset 0px 0px 50px black;
   cursor: pointer;
 }
 
 .letMoove {
   animation-name: mooving;
-  animation-duration: 3s;
-  animation-iteration-count: 4;
-  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-iteration-count: 8;
+  /* animation-direction: alternate; */
   animation-timing-function: linear;
 }
 @keyframes mooving {
   from {
     margin-left: 90px;
     background-color: rgb(83, 30, 255);
-    width: 120px;
+    width: 150px;
   }
   5% {
     background-color: dodgerblue;
-    width: 150px;
+    width: 120px;
+    height: 120px;
+
+    box-shadow: inset -10px -10px 70px black, -100px 280px 100px,
+      inset 0px 0px 50px black;
   }
-  20% {
+  15% {
     background-color: rgb(191, 30, 255);
-    width: 150px;
+    width: 90px;
+    height: 90px;
+    box-shadow: inset -10px -10px 70px black, -50px 280px 100px,
+      inset 0px 0px 50px black;
   }
-  45% {
+  25% {
     background-color: rgb(255, 30, 206);
-    width: 150px;
+    width: 60px;
+    height: 60px;
+    box-shadow: inset -10px -10px 20px black, -10px 280px 100px,
+      inset 0px 0px 50px black;
   }
-  65% {
+  33% {
     background-color: rgb(255, 30, 49);
-    width: 150px;
+    width: 90px;
+    height: 90px;
+    box-shadow: inset -10px -10px 70px black, 50px 280px 100px,
+      inset 0px 0px 50px black;
   }
 
-  95% {
+  40% {
+    background-color: rgb(251, 255, 30);
+    width: 120px;
+    height: 120px;
+    box-shadow: inset -10px -10px 70px black, 90px 280px 100px,
+      inset 0px 0px 50px black;
+  }
+  45% {
     background-color: rgb(251, 255, 30);
     width: 150px;
+    height: 150px;
+    box-shadow: inset -10px -10px 70px black, 90px 280px 100px,
+      inset 0px 0px 50px black;
   }
-  to {
-    margin-left: 750px;
+  50% {
+    margin-left: 790px;
     background-color: rgb(30, 255, 49);
     width: 120px;
+    height: 150px;
+    box-shadow: inset -10px -10px 70px black, 100px 180px 100px,
+      inset 0px 0px 50px black;
+  }
+  63% {
+    background-color: dodgerblue;
+    width: 200px;
+    height: 200px;
+
+    box-shadow: inset -10px -10px 70px black, 50px 230px 100px,
+      inset 0px 0px 50px black;
+  }
+  /* 70% {
+    background-color: rgb(191, 30, 255);
+    width: 250px;
+    height: 250px;
+    box-shadow: inset -10px -10px 70px black, -50px 200px 100px,
+      inset 0px 0px 50px black;
+  } */
+  75% {
+    background-color: rgb(255, 30, 206);
+    width: 270px;
+    height: 270px;
+    box-shadow: inset -10px -10px 20px black, 0px 230px 100px,
+      inset 0px 0px 50px black;
+  }
+  87% {
+    background-color: rgb(255, 30, 49);
+    width: 200px;
+    height: 200px;
+    box-shadow: inset -10px -10px 70px black, 50px 280px 100px,
+      inset 0px 0px 50px black;
+  }
+  95% {
+    background-color: rgb(255, 30, 49);
+    width: 150px;
+    height: 150px;
+    box-shadow: inset -10px -10px 70px black, 50px 280px 100px,
+      inset 0px 0px 50px black;
+  }
+
+  to {
+    margin-left: 90px;
+    background-color: rgb(83, 30, 255);
+    width: 120px;
+    height: 150px;
+    box-shadow: inset -10px -10px 70px black, -130px 160px 100px,
+      inset 0px 0px 50px black;
   }
 }
