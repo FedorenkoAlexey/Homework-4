@@ -29,20 +29,33 @@
 @keyframes mooving {
   from {
     margin-left: 90px;
-    /* background-color: rgb(83, 30, 255); */
+    background-color: rgb(83, 30, 255);
     width: 120px;
   }
   5% {
     background-color: dodgerblue;
     width: 150px;
   }
+  20% {
+    background-color: rgb(191, 30, 255);
+    width: 150px;
+  }
+  45% {
+    background-color: rgb(255, 30, 206);
+    width: 150px;
+  }
+  65% {
+    background-color: rgb(255, 30, 49);
+    width: 150px;
+  }
+
   95% {
-    background-color: dodgerblue;
+    background-color: rgb(251, 255, 30);
     width: 150px;
   }
   to {
     margin-left: 750px;
-    /* background-color: rgb(83, 30, 255); */
-    width: 170px;
+    background-color: rgb(30, 255, 49);
+    width: 120px;
   }
 }
