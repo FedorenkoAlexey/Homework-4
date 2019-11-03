@@ -1,17 +1,20 @@
 #main {
-  width: auto;
-  height: 90vh;
+  width: 1000px;
+  height: 787px;
   position: relative;
+  background: url(../assets/images/3d-room.jpg) center no-repeat;
 }
 
 #ball {
   background-color: dodgerblue;
   position: absolute;
-  margin-top: 10%;
-  width: 200px;
-  height: 200px;
+  margin-top: 33%;
+  margin-left: 90px;
+
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  box-shadow: inset -10px -10px 70px black, 10px 10px 15px,
+  box-shadow: inset -10px -10px 70px black, 0px 280px 100px,
     inset 0px 0px 50px black;
   cursor: pointer;
 }
@@ -25,21 +28,21 @@
 }
 @keyframes mooving {
   from {
-    margin-left: 0%;
-    background-color: dodgerblue;
-    width: 170px;
+    margin-left: 90px;
+    /* background-color: rgb(83, 30, 255); */
+    width: 120px;
   }
   5% {
-    background-color: lawngreen;
-    width: 200px;
+    background-color: dodgerblue;
+    width: 150px;
   }
   95% {
-    background-color: lawngreen;
-    width: 200px;
+    background-color: dodgerblue;
+    width: 150px;
   }
   to {
-    margin-left: 85%;
-    background-color: dodgerblue;
+    margin-left: 750px;
+    /* background-color: rgb(83, 30, 255); */
     width: 170px;
   }
 }
