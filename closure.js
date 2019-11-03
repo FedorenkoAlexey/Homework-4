@@ -32,14 +32,14 @@ function DriveCar() {
 }
 let car = new DriveCar();
 
-// car.addGas();
+// car.addGas(); // add 1 liters petrol
 // car.addGas();
 // car.addGas();
 // car.addGas();
 // car.addGas();
 // car.addGas();
 
-// car.drive();
+// car.drive(); // drive 10km
 // car.drive();
 console.log("Have gas: " + car.petrol() + " liters");
 console.log("You can drive: " + car.distanse() + " km");
