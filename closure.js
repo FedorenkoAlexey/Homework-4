@@ -1,3 +1,4 @@
+console.log("----------Private methods-----------")
 function DriveCar() {
   let _petrol = 0;
   let _distance = 0;
